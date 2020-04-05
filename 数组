@@ -1,0 +1,29 @@
+<?php
+    $color=array("红色","绿色","蓝色");
+        print_r($color);
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        //使用list（）函数
+    $car=array("一本书读懂24种互联网思维","安杰");
+    list($name,$author)=$car;
+    echo "书名是：".$name."\n";
+    echo "作者是：".$author."\n";
+
+    //使用each（）函数
+    $books=array("1","一本书读懂24种互联网思维","2","安杰");
+    $key=each($books);
+    print_r($key);
+    echo "<br>";
+    $key=each($books);
+    print_r($key);
+    echo "<br>";
+    echo "<br>";
+    //使用sort()函数进行升序排列
+    $cars=array("丰田","大众","东风");
+    sort($cars);
+    foreach ($cars as $value)
+    {
+        echo $value."  ";
+    }
+?>
